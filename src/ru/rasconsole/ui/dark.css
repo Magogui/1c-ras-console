@@ -1,0 +1,150 @@
+/* Тёмная тема: поверх console.css. Цвета элементов Modena выводятся из базовых. */
+.root {
+    -fx-base: #3a3d41;
+    -fx-background: #26282b;
+    -fx-control-inner-background: #2d3034;
+    -fx-control-inner-background-alt: #33363a;
+    -fx-accent: #3d7bc4;
+    -fx-focus-color: #4a8fe0;
+    -fx-faint-focus-color: #4a8fe022;
+    -fx-selection-bar: #2f5f99;
+    -fx-selection-bar-non-focused: #3d4a5a;
+    -fx-text-background-color: #e3e3e3;
+    -fx-text-base-color: #e3e3e3;
+    -fx-text-inner-color: #e3e3e3;
+    -fx-dark-text-color: #e3e3e3;
+    -fx-mid-text-color: #cccccc;
+    -fx-light-text-color: #ffffff;
+    -fx-prompt-text-fill: #8a8f96;
+    -fx-box-border: #1c1d1f;
+    -fx-text-box-border: #1c1d1f;
+}
+
+.label,
+.check-box,
+.radio-button,
+.titled-pane > .title > .text {
+    -fx-text-fill: #e3e3e3;
+}
+
+.form-section {
+    -fx-text-fill: #8ab4f8;
+    -fx-border-color: transparent transparent #4a5260 transparent;
+}
+
+.hint-label {
+    -fx-text-fill: #a0a5ab;
+}
+
+.tooltip {
+    -fx-background-color: #3a3d41;
+    -fx-text-fill: #e3e3e3;
+}
+
+.menu-bar {
+    -fx-background-color: #2d3034;
+}
+
+.tree-cell.prod-node {
+    -fx-text-fill: #ff7a7a;
+}
+
+.tree-cell.checking-node {
+    -fx-text-fill: #e8c25a;
+}
+
+.tree-cell.down-node {
+    -fx-background-color: #5a2626;
+    -fx-text-fill: #ffb4b4;
+}
+
+.tree-cell.down-node:selected {
+    -fx-background-color: #a12a2a;
+    -fx-text-fill: white;
+}
+
+.prod-warning {
+    -fx-text-fill: #ff7a7a;
+}
+
+.table-row-cell.row-blocked {
+    -fx-background-color: #5a2a2a;
+}
+
+.table-row-cell.row-blocker {
+    -fx-background-color: #5a4720;
+}
+
+.table-row-cell.row-warning {
+    -fx-background-color: #4a4320;
+}
+
+.table-row-cell.row-blocked .table-cell,
+.table-row-cell.row-blocker .table-cell,
+.table-row-cell.row-warning .table-cell {
+    -fx-text-fill: #f0f0f0;
+}
+
+.chart-plot-background {
+    -fx-background-color: #2d3034;
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: #44474c;
+}
+
+.axis {
+    -fx-tick-label-fill: #cccccc;
+}
+
+.chart-title,
+.chart-legend-item,
+.axis-label {
+    -fx-text-fill: #e3e3e3;
+}
+
+.chart-legend {
+    -fx-background-color: #33363a;
+}
+
+.text-input {
+    -fx-prompt-text-fill: #8a8f96;
+}
+
+.button:default {
+    -fx-base: #2f5f99;
+}
+
+.btn-icon {
+    -fx-stroke: #c9d1db;
+}
+
+.btn-icon-fill {
+    -fx-fill: #c9d1db;
+    -fx-stroke: #c9d1db;
+}
+
+.button.btn-danger {
+    -fx-base: #b23a35;
+}
+
+.button.btn-success {
+    -fx-base: #2a7a4a;
+}
+
+.button.btn-warning {
+    -fx-base: #b8711a;
+}
+
+.button.btn-primary {
+    -fx-base: #2c62b0;
+}
+
+.filter-mark {
+    -fx-fill: #8ab4f8;
+}
+
+.button.clear-filter {
+    -fx-base: #2f4560;
+}

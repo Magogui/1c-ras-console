@@ -1,0 +1,163 @@
+.root {
+    -fx-font-size: 13px;
+}
+
+.view-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.text-field.readonly {
+    -fx-background-color: -fx-control-inner-background-alt;
+}
+
+/* Поля «только чтение» в формах свойств должны оставаться читаемыми */
+.check-box:disabled,
+.combo-box:disabled {
+    -fx-opacity: 0.85;
+}
+
+.tree-cell.prod-node {
+    -fx-text-fill: #b00020;
+    -fx-font-weight: bold;
+}
+
+.tree-cell.prod-node:selected {
+    -fx-text-fill: white;
+}
+
+/* Сервер, связь с которым проверяется */
+.tree-cell.checking-node {
+    -fx-text-fill: #8a6d00;
+}
+
+/* Недоступный сервер (и группа, в которой он есть) */
+.tree-cell.down-node {
+    -fx-background-color: #ffd6d6;
+    -fx-text-fill: #b00020;
+}
+
+.tree-cell.down-node:selected {
+    -fx-background-color: #c62828;
+    -fx-text-fill: white;
+}
+
+.prod-warning {
+    -fx-text-fill: #b00020;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+/* Подсветка строк таблиц */
+.table-row-cell.row-blocked {
+    -fx-background-color: #fde2e1;
+}
+
+.table-row-cell.row-blocker {
+    -fx-background-color: #ffe9b8;
+}
+
+.table-row-cell.row-warning {
+    -fx-background-color: #fff4cc;
+}
+
+.table-row-cell.row-blocked:selected,
+.table-row-cell.row-blocker:selected,
+.table-row-cell.row-warning:selected {
+    -fx-background-color: -fx-selection-bar;
+}
+
+/* Заголовок раздела в форме свойств */
+.form-section {
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c5a8c;
+    -fx-padding: 4 0 3 0;
+    -fx-border-color: transparent transparent #c8d3e0 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.hint-label {
+    -fx-text-fill: #666666;
+}
+
+.section-title {
+    -fx-font-weight: bold;
+}
+
+.filter-field {
+    -fx-pref-width: 260px;
+}
+
+.table-view .table-cell {
+    -fx-padding: 2 6 2 6;
+}
+
+/* Иконки кнопок и пунктов меню (контурные, цвет задаётся здесь) */
+.btn-icon {
+    -fx-fill: transparent;
+    -fx-stroke: #44505e;
+}
+
+.btn-icon-fill {
+    -fx-fill: #44505e;
+    -fx-stroke: #44505e;
+}
+
+/* Ключевые команды: красный — удаление и завершение, зелёный — создание, оранжевый — блокировки и перезапуск,
+   синий — запуск 1С. Текст и иконка на цветном фоне — белые. */
+.button.btn-danger {
+    -fx-base: #d0453f;
+}
+
+.button.btn-success {
+    -fx-base: #2f8f55;
+}
+
+.button.btn-warning {
+    -fx-base: #d9861c;
+}
+
+.button.btn-primary {
+    -fx-base: #2f6fca;
+}
+
+.button.btn-danger,
+.button.btn-success,
+.button.btn-warning,
+.button.btn-primary {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button.btn-danger .btn-icon,
+.button.btn-success .btn-icon,
+.button.btn-warning .btn-icon,
+.button.btn-primary .btn-icon {
+    -fx-stroke: white;
+}
+
+.button.btn-danger .btn-icon-fill,
+.button.btn-success .btn-icon-fill,
+.button.btn-warning .btn-icon-fill,
+.button.btn-primary .btn-icon-fill {
+    -fx-fill: white;
+    -fx-stroke: white;
+}
+
+.menu-item:focused .btn-icon {
+    -fx-stroke: white;
+}
+
+.menu-item:focused .btn-icon-fill {
+    -fx-fill: white;
+    -fx-stroke: white;
+}
+
+/* Значок отбора в заголовке колонки и кнопка «Снять отборы» */
+.filter-mark {
+    -fx-fill: #2f6fca;
+}
+
+.button.clear-filter {
+    -fx-base: #dce8f8;
+}

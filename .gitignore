@@ -1,0 +1,49 @@
+# Результаты сборки (build.ps1, package.ps1)
+/out/
+/dist/
+*.class
+*.jar
+
+# Библиотеки 1С: распространяются только авторизованным пользователям «1С:Предприятия 8»
+# (COPYRIGHT.txt в дистрибутиве Java API). Скачайте архив с ИТС и положите в корень —
+# build.ps1 сам извлечёт jar-файлы в lib/.
+/lib/
+/1cits_exe_java-api-*.zip
+/java-api-*.zip
+/com._1c.v8.ibis.admin-*.zip
+/docs/ras-api/
+
+# Архивы и установщики
+*.zip
+*.tar.gz
+*.msi
+*.exe
+
+# Журналы и аварийные дампы JVM
+*.log
+hs_err_pid*.log
+replay_pid*.log
+
+# Локальные настройки и данные консоли (на случай запуска с APPDATA внутри проекта)
+/RasConsole/
+credentials.dat
+servers.properties
+settings.properties
+ui.properties
+*.rasservers
+
+# Среды разработки
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+nbproject/
+*.swp
+*~
+
+# Служебные файлы ОС
+Thumbs.db
+desktop.ini
+.DS_Store
